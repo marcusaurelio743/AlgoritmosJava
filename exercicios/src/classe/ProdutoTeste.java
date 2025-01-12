@@ -15,12 +15,14 @@ public class ProdutoTeste {
 		p2.nome = "Caneta preta";
 		p2.preco = 12.56;
 		p2.desconto = 0.29;
-		double precofinal = p1.preco*(1 - p1.desconto);
-		double precofinal2 = p2.preco*(1 - p2.desconto);
+		double precofinal = p1.precoComDesconto(0);
+		double precofinal2 = p2.precoComDesconto(0.1);
+		
 		System.out.println(p1.nome);
-		System.out.println(" ");
+		
 		System.out.println(p2.nome);
-		System.out.println((precofinal+precofinal2)/2);
+		
+		System.out.println("Media carrinho: "+ (precofinal+precofinal2)/2);
 		
 		
 		
