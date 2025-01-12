@@ -16,6 +16,9 @@ public class DataTeste {
 		d2.ano = 2015;
 		
 		d2.mostrarData();
+		
+		Data d3 = new Data();
+		d3.mostrarData();
 	}
 
 }
