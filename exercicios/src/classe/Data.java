@@ -7,7 +7,11 @@ public class Data {
 	
 	public String dataFormatada() {
 		
-		return dia+"/"+mes+"/"+ano;
+		return String.format("%d/%d/%d",dia,mes,ano) ;
+	}
+	
+	public void mostrarData() {
+		System.out.println(dataFormatada());
 	}
 
 }
