@@ -3,7 +3,7 @@ package classe;
 public class Produto {
 	String nome;
 	double preco;
-	double desconto;
+	 static double desconto = 0.25;
 	
 	Produto(){
 		
@@ -18,11 +18,7 @@ public class Produto {
 		this.preco = preco;
 		
 	}
-	Produto(String nome,double preco,double desconto){
-		this.nome = nome;
-		this.preco = preco;
-		this.desconto = desconto;
-	}
+	
 	
 	public double precoComDesconto() {
 		return preco * (1-desconto);
