@@ -5,7 +5,8 @@ public class Corrida {
 	public static void main(String[] args) {
 		Carro gol = new Gol();
 		gol.velocidade = 100;
-		Carro ferrari = new Ferrari();
+		
+		Ferrari ferrari = new Ferrari();
 		ferrari.velocidade = 100;
 		ferrari.acelerar();
 		ferrari.acelerar();
@@ -15,7 +16,8 @@ public class Corrida {
 		
 		System.out.println("velocidade Ferrari: "+ferrari.velocidade);
 		System.out.println("velocidade Gol: "+gol.velocidade);
-		
+		ferrari.ligarTurbo();
+		ferrari.ligarTurbo();
 		ferrari.reduzir();
 		ferrari.reduzir();
 		ferrari.reduzir();
