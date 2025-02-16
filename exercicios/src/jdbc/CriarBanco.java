@@ -14,8 +14,11 @@ public class CriarBanco {
 		
 		Connection conexao = DriverManager.getConnection(stringConexao, usuario, senha);
 		
+		//Connection conexao = FabricaConexao.getConexao();
+		
 		Statement stms = conexao.createStatement();
-		stms.execute("create database javajdbc");
+		
+		stms.execute("create database javajdbc2");
 		
 		System.out.println("Banco criado com sucesso!!!");
 		conexao.close();
