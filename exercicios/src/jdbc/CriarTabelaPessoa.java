@@ -9,7 +9,7 @@ public class CriarTabelaPessoa {
 		
 			Connection conexao = FabricaConexao.getConexao();
 			String sql ="CREATE TABLE Pessoa (";
-			sql+= " codigo Integer  PRIMARY KEY,nome varchar(80) not null);";
+			sql+= " codigo SERIAL PRIMARY KEY,nome varchar(80) not null);";
 			
 			Statement statement = conexao.createStatement();
 			
