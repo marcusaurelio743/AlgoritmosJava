@@ -18,6 +18,7 @@ public class NovaPessoa {
 			PreparedStatement statement = conexao.prepareStatement(sql);
 			statement.setString(1, nome);
 			statement.execute();
+			conexao.commit();
 			
 			
 			System.out.println("Pessoa incluida com sucesso!!!");

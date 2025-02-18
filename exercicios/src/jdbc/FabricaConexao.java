@@ -11,8 +11,12 @@ public class FabricaConexao {
 			final String stringConexao = "jdbc:postgresql://localhost:5433/javajdbc";
 			final String usuario = "postgres";
 			final String senha = "admin";
+			Connection conexao = DriverManager.getConnection(stringConexao, usuario, senha);
+			conexao.setAutoCommit(false);
 			
-			return  DriverManager.getConnection(stringConexao, usuario, senha);
+			return conexao;
+			
+			
 			
 		}catch (SQLException e) {
 			
